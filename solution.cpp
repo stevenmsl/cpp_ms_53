@@ -29,7 +29,7 @@ int Solution::maxSubArray(vector<int> &nums)
   for (auto i = 1; i < n; i++)
   {
     /* If sum[i-1] is negative, it will reduce the sum.
-       You will be better off by starting  a new subarray
+       You will be better off by starting a new subarray
        with nums[i] being the very first element
     */
     sum[i] = max(sum[i - 1] + nums[i], nums[i]);
